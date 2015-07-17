@@ -22,100 +22,102 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.GroupBox1.SuspendLayout()
+        Me.UserLoginGB = New System.Windows.Forms.GroupBox()
+        Me.ClearButton = New System.Windows.Forms.Button()
+        Me.SubmitButton = New System.Windows.Forms.Button()
+        Me.PasswordTB = New System.Windows.Forms.TextBox()
+        Me.UsernameTB = New System.Windows.Forms.TextBox()
+        Me.PasswordLabel = New System.Windows.Forms.Label()
+        Me.UsernameLabel = New System.Windows.Forms.Label()
+        Me.UserLoginGB.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'UserLoginGB
         '
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(260, 237)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "User Login"
+        Me.UserLoginGB.Controls.Add(Me.ClearButton)
+        Me.UserLoginGB.Controls.Add(Me.SubmitButton)
+        Me.UserLoginGB.Controls.Add(Me.PasswordTB)
+        Me.UserLoginGB.Controls.Add(Me.UsernameTB)
+        Me.UserLoginGB.Controls.Add(Me.PasswordLabel)
+        Me.UserLoginGB.Controls.Add(Me.UsernameLabel)
+        Me.UserLoginGB.Location = New System.Drawing.Point(12, 12)
+        Me.UserLoginGB.Name = "UserLoginGB"
+        Me.UserLoginGB.Size = New System.Drawing.Size(260, 237)
+        Me.UserLoginGB.TabIndex = 0
+        Me.UserLoginGB.TabStop = False
+        Me.UserLoginGB.Text = "User Login"
         '
-        'Label1
+        'ClearButton
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 77)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Username"
+        Me.ClearButton.Location = New System.Drawing.Point(115, 140)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(75, 23)
+        Me.ClearButton.TabIndex = 5
+        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.UseVisualStyleBackColor = True
         '
-        'Label2
+        'SubmitButton
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(31, 108)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Password"
+        Me.SubmitButton.Location = New System.Drawing.Point(34, 140)
+        Me.SubmitButton.Name = "SubmitButton"
+        Me.SubmitButton.Size = New System.Drawing.Size(75, 23)
+        Me.SubmitButton.TabIndex = 4
+        Me.SubmitButton.Text = "Submit"
+        Me.SubmitButton.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'PasswordTB
         '
-        Me.TextBox1.Location = New System.Drawing.Point(92, 70)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.PasswordTB.Location = New System.Drawing.Point(90, 101)
+        Me.PasswordTB.MaxLength = 50
+        Me.PasswordTB.Name = "PasswordTB"
+        Me.PasswordTB.Size = New System.Drawing.Size(100, 20)
+        Me.PasswordTB.TabIndex = 3
         '
-        'TextBox2
+        'UsernameTB
         '
-        Me.TextBox2.Location = New System.Drawing.Point(90, 101)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.UsernameTB.Location = New System.Drawing.Point(92, 70)
+        Me.UsernameTB.MaxLength = 50
+        Me.UsernameTB.Name = "UsernameTB"
+        Me.UsernameTB.Size = New System.Drawing.Size(100, 20)
+        Me.UsernameTB.TabIndex = 2
         '
-        'Button1
+        'PasswordLabel
         '
-        Me.Button1.Location = New System.Drawing.Point(34, 140)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Submit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.PasswordLabel.AutoSize = True
+        Me.PasswordLabel.Location = New System.Drawing.Point(31, 108)
+        Me.PasswordLabel.Name = "PasswordLabel"
+        Me.PasswordLabel.Size = New System.Drawing.Size(53, 13)
+        Me.PasswordLabel.TabIndex = 1
+        Me.PasswordLabel.Text = "Password"
         '
-        'Button2
+        'UsernameLabel
         '
-        Me.Button2.Location = New System.Drawing.Point(115, 140)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Clear"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.UsernameLabel.AutoSize = True
+        Me.UsernameLabel.Location = New System.Drawing.Point(31, 77)
+        Me.UsernameLabel.Name = "UsernameLabel"
+        Me.UsernameLabel.Size = New System.Drawing.Size(55, 13)
+        Me.UsernameLabel.TabIndex = 0
+        Me.UsernameLabel.Text = "Username"
         '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.UserLoginGB)
         Me.Name = "LoginForm"
         Me.Text = "Login"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.UserLoginGB.ResumeLayout(False)
+        Me.UserLoginGB.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents UserLoginGB As System.Windows.Forms.GroupBox
+    Friend WithEvents PasswordTB As System.Windows.Forms.TextBox
+    Friend WithEvents UsernameTB As System.Windows.Forms.TextBox
+    Friend WithEvents PasswordLabel As System.Windows.Forms.Label
+    Friend WithEvents UsernameLabel As System.Windows.Forms.Label
+    Friend WithEvents ClearButton As System.Windows.Forms.Button
+    Friend WithEvents SubmitButton As System.Windows.Forms.Button
 
 End Class

@@ -1,1 +1,10 @@
 c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\bin\Debug\Simple HRIS.exe.config
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\bin\Debug\Simple HRIS.exe
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\bin\Debug\Simple HRIS.pdb
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\bin\Debug\Simple HRIS.xml
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.LoginForm.resources
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.Resources.resources
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.vbproj.GenerateResource.Cache
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.exe
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.xml
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.pdb
