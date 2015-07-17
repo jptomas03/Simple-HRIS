@@ -9,8 +9,4 @@
         StaffIDTB.Text = ""
         PasswordTB.Text = ""
     End Sub
-
-    Private Sub UsernameTB_TextChanged(sender As Object, e As EventArgs) Handles StaffIDTB.TextChanged
-
-    End Sub
 End Class

@@ -32,4 +32,17 @@
         Copyright.Text = My.Application.Info.Copyright
     End Sub
 
+    Private Sub SplashScreenLayout_Paint(sender As Object, e As PaintEventArgs) Handles SplashScreenLayout.Paint
+        Timer1.Start()
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        countdownLabel.Text = countdownLabel.Text - 1
+
+        If countdownLabel.Text = 0 Then
+            Me.Hide()
+            LoginForm.Show()
+        End If
+    End Sub
 End Class

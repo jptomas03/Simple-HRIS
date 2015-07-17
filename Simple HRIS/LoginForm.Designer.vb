@@ -105,6 +105,7 @@ Partial Class LoginForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.UserLoginGB)
+        Me.DoubleBuffered = True
         Me.Name = "LoginForm"
         Me.Text = "Login"
         Me.UserLoginGB.ResumeLayout(False)

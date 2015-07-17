@@ -16,7 +16,7 @@ Partial Class SplashScreen1
     Friend WithEvents ApplicationTitle As System.Windows.Forms.Label
     Friend WithEvents Version As System.Windows.Forms.Label
     Friend WithEvents Copyright As System.Windows.Forms.Label
-    Friend WithEvents MainLayoutPanel As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents SplashScreenLayout As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents DetailsLayoutPanel As System.Windows.Forms.TableLayoutPanel
 
     'Required by the Windows Form Designer
@@ -27,32 +27,35 @@ Partial Class SplashScreen1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
-        Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.SplashScreenLayout = New System.Windows.Forms.TableLayoutPanel()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
-        Me.MainLayoutPanel.SuspendLayout()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.countdownLabel = New System.Windows.Forms.Label()
+        Me.SplashScreenLayout.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         Me.SuspendLayout()
         '
-        'MainLayoutPanel
+        'SplashScreenLayout
         '
-        Me.MainLayoutPanel.BackgroundImage = CType(resources.GetObject("MainLayoutPanel.BackgroundImage"), System.Drawing.Image)
-        Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainLayoutPanel.ColumnCount = 2
-        Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
-        Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
-        Me.MainLayoutPanel.Controls.Add(Me.DetailsLayoutPanel, 1, 1)
-        Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 1, 0)
-        Me.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainLayoutPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MainLayoutPanel.Name = "MainLayoutPanel"
-        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
-        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.MainLayoutPanel.Size = New System.Drawing.Size(496, 303)
-        Me.MainLayoutPanel.TabIndex = 0
+        Me.SplashScreenLayout.BackgroundImage = CType(resources.GetObject("SplashScreenLayout.BackgroundImage"), System.Drawing.Image)
+        Me.SplashScreenLayout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SplashScreenLayout.ColumnCount = 2
+        Me.SplashScreenLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
+        Me.SplashScreenLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253.0!))
+        Me.SplashScreenLayout.Controls.Add(Me.DetailsLayoutPanel, 1, 1)
+        Me.SplashScreenLayout.Controls.Add(Me.ApplicationTitle, 1, 0)
+        Me.SplashScreenLayout.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplashScreenLayout.Location = New System.Drawing.Point(0, 0)
+        Me.SplashScreenLayout.Name = "SplashScreenLayout"
+        Me.SplashScreenLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
+        Me.SplashScreenLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.SplashScreenLayout.Size = New System.Drawing.Size(496, 303)
+        Me.SplashScreenLayout.TabIndex = 0
         '
         'DetailsLayoutPanel
         '
@@ -79,7 +82,7 @@ Partial Class SplashScreen1
         Me.Version.Name = "Version"
         Me.Version.Size = New System.Drawing.Size(241, 20)
         Me.Version.TabIndex = 1
-        Me.Version.Text = "Version {0}.{1:00}"
+        Me.Version.Text = "Version 0.1"
         '
         'Copyright
         '
@@ -90,7 +93,7 @@ Partial Class SplashScreen1
         Me.Copyright.Name = "Copyright"
         Me.Copyright.Size = New System.Drawing.Size(241, 40)
         Me.Copyright.TabIndex = 2
-        Me.Copyright.Text = "Copyright"
+        Me.Copyright.Text = "Copyright RevCom"
         '
         'ApplicationTitle
         '
@@ -104,23 +107,41 @@ Partial Class SplashScreen1
         Me.ApplicationTitle.Text = "Human Resource Information System"
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
+        'countdownLabel
+        '
+        Me.countdownLabel.AutoSize = True
+        Me.countdownLabel.Location = New System.Drawing.Point(0, 0)
+        Me.countdownLabel.Name = "countdownLabel"
+        Me.countdownLabel.Size = New System.Drawing.Size(13, 13)
+        Me.countdownLabel.TabIndex = 1
+        Me.countdownLabel.Text = "5"
+        Me.countdownLabel.Visible = False
+        '
         'SplashScreen1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(496, 303)
         Me.ControlBox = False
-        Me.Controls.Add(Me.MainLayoutPanel)
+        Me.Controls.Add(Me.countdownLabel)
+        Me.Controls.Add(Me.SplashScreenLayout)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SplashScreen1"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.MainLayoutPanel.ResumeLayout(False)
+        Me.SplashScreenLayout.ResumeLayout(False)
         Me.DetailsLayoutPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents countdownLabel As System.Windows.Forms.Label
 
 End Class
