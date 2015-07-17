@@ -1,0 +1,1 @@
+c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\bin\Debug\Simple HRIS.exe.config
