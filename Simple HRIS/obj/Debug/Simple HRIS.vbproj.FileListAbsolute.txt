@@ -8,3 +8,5 @@ c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\ob
 c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.exe
 c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.xml
 c:\users\jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.pdb
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.MotherForm.resources
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.SplashScreen1.resources

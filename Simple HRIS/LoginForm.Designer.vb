@@ -26,7 +26,7 @@ Partial Class LoginForm
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.SubmitButton = New System.Windows.Forms.Button()
         Me.PasswordTB = New System.Windows.Forms.TextBox()
-        Me.UsernameTB = New System.Windows.Forms.TextBox()
+        Me.StaffIDTB = New System.Windows.Forms.TextBox()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.UserLoginGB.SuspendLayout()
@@ -37,7 +37,7 @@ Partial Class LoginForm
         Me.UserLoginGB.Controls.Add(Me.ClearButton)
         Me.UserLoginGB.Controls.Add(Me.SubmitButton)
         Me.UserLoginGB.Controls.Add(Me.PasswordTB)
-        Me.UserLoginGB.Controls.Add(Me.UsernameTB)
+        Me.UserLoginGB.Controls.Add(Me.StaffIDTB)
         Me.UserLoginGB.Controls.Add(Me.PasswordLabel)
         Me.UserLoginGB.Controls.Add(Me.UsernameLabel)
         Me.UserLoginGB.Location = New System.Drawing.Point(12, 12)
@@ -45,7 +45,7 @@ Partial Class LoginForm
         Me.UserLoginGB.Size = New System.Drawing.Size(260, 237)
         Me.UserLoginGB.TabIndex = 0
         Me.UserLoginGB.TabStop = False
-        Me.UserLoginGB.Text = "User Login"
+        Me.UserLoginGB.Text = "Staff Login"
         '
         'ClearButton
         '
@@ -73,13 +73,13 @@ Partial Class LoginForm
         Me.PasswordTB.Size = New System.Drawing.Size(100, 20)
         Me.PasswordTB.TabIndex = 3
         '
-        'UsernameTB
+        'StaffIDTB
         '
-        Me.UsernameTB.Location = New System.Drawing.Point(92, 70)
-        Me.UsernameTB.MaxLength = 50
-        Me.UsernameTB.Name = "UsernameTB"
-        Me.UsernameTB.Size = New System.Drawing.Size(100, 20)
-        Me.UsernameTB.TabIndex = 2
+        Me.StaffIDTB.Location = New System.Drawing.Point(90, 70)
+        Me.StaffIDTB.MaxLength = 50
+        Me.StaffIDTB.Name = "StaffIDTB"
+        Me.StaffIDTB.Size = New System.Drawing.Size(100, 20)
+        Me.StaffIDTB.TabIndex = 2
         '
         'PasswordLabel
         '
@@ -95,9 +95,9 @@ Partial Class LoginForm
         Me.UsernameLabel.AutoSize = True
         Me.UsernameLabel.Location = New System.Drawing.Point(31, 77)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(55, 13)
+        Me.UsernameLabel.Size = New System.Drawing.Size(43, 13)
         Me.UsernameLabel.TabIndex = 0
-        Me.UsernameLabel.Text = "Username"
+        Me.UsernameLabel.Text = "Staff ID"
         '
         'LoginForm
         '
@@ -114,7 +114,7 @@ Partial Class LoginForm
     End Sub
     Friend WithEvents UserLoginGB As System.Windows.Forms.GroupBox
     Friend WithEvents PasswordTB As System.Windows.Forms.TextBox
-    Friend WithEvents UsernameTB As System.Windows.Forms.TextBox
+    Friend WithEvents StaffIDTB As System.Windows.Forms.TextBox
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
     Friend WithEvents ClearButton As System.Windows.Forms.Button
