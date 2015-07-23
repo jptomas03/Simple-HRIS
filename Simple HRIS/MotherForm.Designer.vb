@@ -29,8 +29,10 @@ Partial Class MotherForm
         Me.NameLabel = New System.Windows.Forms.Label()
         Me.UserPicture = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Db_hrisDataSet = New Simple_HRIS.db_hrisDataSet()
         Me.GroupBox1.SuspendLayout()
         CType(Me.UserPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Db_hrisDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LogoutBT
@@ -104,6 +106,11 @@ Partial Class MotherForm
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "HRIS"
         '
+        'Db_hrisDataSet
+        '
+        Me.Db_hrisDataSet.DataSetName = "db_hrisDataSet"
+        Me.Db_hrisDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'MotherForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -114,10 +121,11 @@ Partial Class MotherForm
         Me.Controls.Add(Me.UserPicture)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "MotherForm"
-        Me.Text = "Profile"
+        Me.Text = " "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.UserPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Db_hrisDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -129,4 +137,5 @@ Partial Class MotherForm
     Friend WithEvents JobLabel As System.Windows.Forms.Label
     Friend WithEvents NameLabel As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Db_hrisDataSet As Simple_HRIS.db_hrisDataSet
 End Class
