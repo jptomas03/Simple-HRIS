@@ -30,6 +30,7 @@ Partial Class MotherForm
         Me.UserPicture = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Db_hrisDataSet = New Simple_HRIS.db_hrisDataSet()
+        Me.InsertEmployeeButton = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.UserPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Db_hrisDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -111,12 +112,22 @@ Partial Class MotherForm
         Me.Db_hrisDataSet.DataSetName = "db_hrisDataSet"
         Me.Db_hrisDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'InsertEmployeeButton
+        '
+        Me.InsertEmployeeButton.Location = New System.Drawing.Point(349, 12)
+        Me.InsertEmployeeButton.Name = "InsertEmployeeButton"
+        Me.InsertEmployeeButton.Size = New System.Drawing.Size(75, 23)
+        Me.InsertEmployeeButton.TabIndex = 4
+        Me.InsertEmployeeButton.Text = "Add User"
+        Me.InsertEmployeeButton.UseVisualStyleBackColor = True
+        '
         'MotherForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(446, 222)
+        Me.Controls.Add(Me.InsertEmployeeButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.UserPicture)
         Me.Controls.Add(Me.GroupBox1)
@@ -138,4 +149,5 @@ Partial Class MotherForm
     Friend WithEvents NameLabel As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Db_hrisDataSet As Simple_HRIS.db_hrisDataSet
+    Friend WithEvents InsertEmployeeButton As System.Windows.Forms.Button
 End Class

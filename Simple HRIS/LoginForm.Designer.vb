@@ -72,6 +72,7 @@ Partial Class LoginForm
         Me.PasswordTB.Name = "PasswordTB"
         Me.PasswordTB.Size = New System.Drawing.Size(100, 20)
         Me.PasswordTB.TabIndex = 3
+        Me.PasswordTB.UseSystemPasswordChar = True
         '
         'StaffIDTB
         '

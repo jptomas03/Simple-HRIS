@@ -76,6 +76,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_hrisDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InsertEmployeeForm.Designer.vb">
+      <DependentUpon>InsertEmployeeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertEmployeeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="InsertEmployeeForm.resx">
+      <DependentUpon>InsertEmployeeForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </EmbeddedResource>
