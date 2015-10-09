@@ -46,6 +46,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -71,15 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="db_hrisDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>db_hrisDataSet.xsd</DependentUpon>
+    <Compile Include="EditForm.Designer.vb">
+      <DependentUpon>EditForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="InsertEmployeeForm.Designer.vb">
-      <DependentUpon>InsertEmployeeForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="InsertEmployeeForm.vb">
+    <Compile Include="EditForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.vb">
@@ -118,8 +114,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="InsertEmployeeForm.resx">
-      <DependentUpon>InsertEmployeeForm.vb</DependentUpon>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
@@ -138,17 +134,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="db_hrisDataSet.xsc">
-      <DependentUpon>db_hrisDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="db_hrisDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>db_hrisDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="db_hrisDataSet.xss">
-      <DependentUpon>db_hrisDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -159,11 +144,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="db_hris.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
