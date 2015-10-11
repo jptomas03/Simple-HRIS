@@ -6,7 +6,23 @@ SimpleHRIS
 </name>
 </assembly>
 <members>
-<member name="P:Simple_HRIS.My.Resources.Resources.ResourceManager">
+<member name="T:Simple_HRIS.DataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Simple_HRIS.DataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Simple_HRIS.DataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Simple_HRIS.DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Simple_HRIS.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

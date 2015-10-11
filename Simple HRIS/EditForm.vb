@@ -16,32 +16,16 @@ Public Class EditForm
 
         cmd = New MySqlCommand(stm, conn)
         cmd.Connection = conn
-        cmd.CommandText = "select zip_code, state from tb_zip;"
+        cmd.CommandText = "select state from tb_zip;"
         cmd.Prepare()
 
         Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
         While reader.Read()
             StateCB.Items.Add(reader("state").ToString())
-            ZipCB.Items.Add(reader("zip_code").ToString())
-            StateCB2.Items.Add(reader("state").ToString())
-            ZipCB2.Items.Add(reader("zip_code").ToString())
+
         End While
         conn.Close()
-        conn.Open()
-
-        cmd = New MySqlCommand(stm, conn)
-        cmd.Connection = conn
-        cmd.CommandText = "select city_name from tb_city;"
-
-        reader = cmd.ExecuteReader()
-
-        While reader.Read()
-            CityCB.Items.Add(reader("city_name").ToString())
-            CityCB2.Items.Add(reader("city_name").ToString())
-        End While
-        conn.Close()
-
         conn.Open()
 
         cmd = New MySqlCommand(stm, conn)
@@ -62,15 +46,10 @@ Public Class EditForm
         MiddleNameTB.Text = MotherForm.middle_name
         LastNameTB.Text = MotherForm.last_name
         StateCB.Text = MotherForm.state
-        CityCB.Text = MotherForm.city
-        ZipCB.Text = MotherForm.zip_code
         EmailTB.Text = MotherForm.email
         ContactTB.Text = MotherForm.contacts
 
         SchoolCB.Text = MotherForm.school
-        StateCB2.Text = MotherForm.school_state
-        CityCB2.Text = MotherForm.school_city
-        ZipCB2.Text = MotherForm.school_zip
         YearTB.Text = MotherForm.year_graduated
     End Sub
 
@@ -102,13 +81,13 @@ Public Class EditForm
 
         cmd = New MySqlCommand(stm, conn)
         cmd.Connection = conn
-        cmd.CommandText = "update tb_personal_info set last_name = @last_name, first_name = @first_name, middle_name = @middle_name, zip_id = (select zip_id from tb_zip where zip_code = @zip_code), email = @email, contacts = @contacts where employee_id = @employee_id;"
+        cmd.CommandText = "update tb_personal_info set last_name = @last_name, first_name = @first_name, middle_name = @middle_name, zip_id = (select zip_id from tb_zip where state = @state), email = @email, contacts = @contacts where employee_id = @employee_id;"
         cmd.Prepare()
 
         cmd.Parameters.AddWithValue("@last_name", LastNameTB.Text)
         cmd.Parameters.AddWithValue("@first_name", FirstNameTB.Text)
         cmd.Parameters.AddWithValue("@middle_name", MiddleNameTB.Text)
-        cmd.Parameters.AddWithValue("@zip_code", ZipCB.SelectedItem)
+        cmd.Parameters.AddWithValue("@state", StateCB.SelectedItem)
         cmd.Parameters.AddWithValue("@email", EmailTB.Text)
         cmd.Parameters.AddWithValue("@contacts", ContactTB.Text)
         cmd.Parameters.AddWithValue("@employee_id", MotherForm.employee_id)

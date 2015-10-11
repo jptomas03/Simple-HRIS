@@ -41,8 +41,8 @@
         countdownLabel.Text = countdownLabel.Text - 1
 
         If countdownLabel.Text = 0 Then
-            Me.Hide()
             LoginForm.Show()
+            Me.Close()
         End If
     End Sub
 End Class

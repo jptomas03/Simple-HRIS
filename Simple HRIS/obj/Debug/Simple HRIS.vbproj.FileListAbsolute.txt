@@ -12,3 +12,10 @@ C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\ob
 C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.SplashScreen1.resources
 C:\Users\Jayson\documents\visual studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple HRIS.vbprojResolveAssemblyReference.cache
 C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.EditForm.resources
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.AdminForm.resources
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.EmployeeReportForm.resources
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.InsertEmployeeForm.resources
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\RdlCompile.cache
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\RdlCompile.compiled
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.SearchFor.resources
+C:\Users\Jayson\Documents\Visual Studio 2013\Projects\Simple HRIS\Simple HRIS\obj\Debug\Simple_HRIS.ViewForm.resources

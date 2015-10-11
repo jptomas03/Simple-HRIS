@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MotherForm
+Partial Class ViewForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,9 +22,7 @@ Partial Class MotherForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LogoutBT = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.EditBT = New System.Windows.Forms.Button()
         Me.HiredLabel = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.DeptTB = New System.Windows.Forms.TextBox()
@@ -41,6 +39,7 @@ Partial Class MotherForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SchoolTB = New System.Windows.Forms.TextBox()
         Me.SchoolAddressTB = New System.Windows.Forms.TextBox()
         Me.YearTB = New System.Windows.Forms.TextBox()
@@ -52,19 +51,8 @@ Partial Class MotherForm
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'LogoutBT
-        '
-        Me.LogoutBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogoutBT.Location = New System.Drawing.Point(454, 126)
-        Me.LogoutBT.Name = "LogoutBT"
-        Me.LogoutBT.Size = New System.Drawing.Size(75, 23)
-        Me.LogoutBT.TabIndex = 0
-        Me.LogoutBT.Text = "Logout"
-        Me.LogoutBT.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.EditBT)
         Me.GroupBox1.Controls.Add(Me.HiredLabel)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.DeptTB)
@@ -72,25 +60,14 @@ Partial Class MotherForm
         Me.GroupBox1.Controls.Add(Me.NameTB)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.LogoutBT)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 23)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(535, 158)
-        Me.GroupBox1.TabIndex = 1
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Employee"
-        '
-        'EditBT
-        '
-        Me.EditBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditBT.Location = New System.Drawing.Point(373, 126)
-        Me.EditBT.Name = "EditBT"
-        Me.EditBT.Size = New System.Drawing.Size(75, 23)
-        Me.EditBT.TabIndex = 13
-        Me.EditBT.Text = "Edit"
-        Me.EditBT.UseVisualStyleBackColor = True
         '
         'HiredLabel
         '
@@ -98,9 +75,9 @@ Partial Class MotherForm
         Me.HiredLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HiredLabel.Location = New System.Drawing.Point(146, 129)
         Me.HiredLabel.Name = "HiredLabel"
-        Me.HiredLabel.Size = New System.Drawing.Size(82, 20)
+        Me.HiredLabel.Size = New System.Drawing.Size(91, 20)
         Me.HiredLabel.TabIndex = 12
-        Me.HiredLabel.Text = "2015-05-7"
+        Me.HiredLabel.Text = "0000-00-00"
         '
         'Label10
         '
@@ -178,10 +155,10 @@ Partial Class MotherForm
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 187)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 176)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(529, 143)
-        Me.GroupBox2.TabIndex = 4
+        Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Profile"
         '
@@ -251,12 +228,22 @@ Partial Class MotherForm
         Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Controls.Add(Me.Label8)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 356)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 325)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(529, 140)
-        Me.GroupBox3.TabIndex = 5
+        Me.GroupBox3.TabIndex = 14
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Education"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(466, 471)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Back"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'SchoolTB
         '
@@ -315,17 +302,18 @@ Partial Class MotherForm
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Address"
         '
-        'MotherForm
+        'ViewForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(576, 483)
+        Me.ClientSize = New System.Drawing.Size(568, 412)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "MotherForm"
-        Me.Text = " "
+        Me.Name = "ViewForm"
+        Me.Text = "ViewForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -335,29 +323,28 @@ Partial Class MotherForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents LogoutBT As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents HiredLabel As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents DeptTB As System.Windows.Forms.TextBox
     Friend WithEvents JobTB As System.Windows.Forms.TextBox
     Friend WithEvents NameTB As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents ContactTB As System.Windows.Forms.TextBox
     Friend WithEvents EmailTB As System.Windows.Forms.TextBox
     Friend WithEvents AddressTB As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents SchoolTB As System.Windows.Forms.TextBox
     Friend WithEvents SchoolAddressTB As System.Windows.Forms.TextBox
     Friend WithEvents YearTB As System.Windows.Forms.TextBox
-    Friend WithEvents HiredLabel As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents EditBT As System.Windows.Forms.Button
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

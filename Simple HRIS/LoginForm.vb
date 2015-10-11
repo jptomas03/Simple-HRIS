@@ -56,8 +56,8 @@ Public Class LoginForm
     Private Sub ConnectToMySql()
                 
         connString = "server=localhost;" _
-                   & "uid=root;" _
-                   & "pwd=a7ulbxvinh8e;" _
+                   & "uid=hris;" _
+                   & "pwd=dbms;" _
                    & "database=db_hris"
 
         Try
